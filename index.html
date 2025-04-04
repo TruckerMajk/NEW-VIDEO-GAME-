@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First JS Program</title>
+    <title>My First Game Website</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Tukaj boste sprejemali najnovejše podatke moje video igre ki jo bom naredil v prihodnosti (je že v obdelavi), lahko napišete ideje za igrico, kaj se dogaja, kaj se lahko dela, kako naj izgleda (3D) realistična ali ne preveč realistična in tako dalje. Odspodaj lahko napišete kaj lahko skupaj ustvarimo</h1>
-    <script>
-        alert("JavaScript is working!");
-        console.log("This message is in the console.");
-    </script>
+    <h1>Welcome to My Game Website!</h1>
+    <p>Tukaj lahko pošljete sporočila kakšna bi lahko bila igrica, kaj se dogaja, dela , kako izgleda in tako dalje. Z vašo pomočjo lahko ustvarimo to igrico v DOBIČEK. :)</p>
+    
+    <!-- Add a form to submit ideas -->
+    <h2>Send Us Your Ideas!</h2>
+    <form action="your-email-or-script" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="message">Your Idea:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Send Idea">
+    </form>
 </body>
 </html>
 
-<p>Vaša ideja za igro:</p>
-<input type="text" id="gameIdea" placeholder="Vnesi idejo...">
-<button onclick="submitIdea()">Pošlji</button>
-
-<script>
-  function submitIdea() {
-    const idea = document.getElementById('gameIdea').value;
-    if (idea.trim() !== "") {
-      alert("Hvala za vašo idejo: " + idea);
-      console.log("Nova ideja: " + idea);
-    } else {
-      alert("Prosim, napišite idejo preden pošljete.");
-    }
-  }
 </script>
