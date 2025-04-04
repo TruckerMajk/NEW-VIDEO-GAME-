@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First JS Program</title>
+</head>
+<body>
+    <h1>Tukaj boste sprejemali najnovejše podatke moje video igre ki jo bom naredil v prihodnosti (je že v obdelavi), lahko napišete ideje za igrico, kaj se dogaja, kaj se lahko dela, kako naj izgleda (3D) realistična ali ne preveč realistična in tako dalje. Odspodaj lahko napišete kaj lahko skupaj ustvarimo</h1>
+    <script>
+        alert("JavaScript is working!");
+        console.log("This message is in the console.");
+    </script>
+</body>
+</html>
+
+<p>Vaša ideja za igro:</p>
+<input type="text" id="gameIdea" placeholder="Vnesi idejo...">
+<button onclick="submitIdea()">Pošlji</button>
+
+<script>
+  function submitIdea() {
+    const idea = document.getElementById('gameIdea').value;
+    if (idea.trim() !== "") {
+      alert("Hvala za vašo idejo: " + idea);
+      console.log("Nova ideja: " + idea);
+    } else {
+      alert("Prosim, napišite idejo preden pošljete.");
+    }
+  }
+</script>
